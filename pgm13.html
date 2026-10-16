@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Light Bulb</title>
+</head>
+<body>
+
+<h2>Light Bulb ON/OFF</h2>
+
+<img id="bulb" src="/home/user/Downloads/off.jpeg" width="150" height="200">
+
+<br><br>
+
+<button id="btn">ON / OFF</button>
+
+<script>
+    var bulb = document.getElementById("bulb");
+    var btn = document.getElementById("btn");
+    var isOn = false;
+
+    btn.addEventListener("click", function() {
+        if (isOn == false) {
+            bulb.src = "/home/user/Downloads/on.jpeg";
+            isOn = true;
+        } else {
+            bulb.src = "/home/user/Downloads/off.jpeg";
+            isOn = false;
+        }
+    });
+</script>
+
+</body>
+</html>
