@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Bulb</title>
+</head>
+
+<body style="background-color:black; color:white; text-align:center; margin-top:100px">
+
+    <h2>Light Bulb ON/OFF</h2>
+
+    <img id="bulb" src="/home/user/Downloads/off.jpeg" width="150" height="200">
+
+    <br><br>
+
+    <button id="onBtn">ON</button>
+    <button id="offBtn">OFF</button>
+
+    <script>
+        var bulb = document.getElementById("bulb");
+        var onBtn = document.getElementById("onBtn");
+        var offBtn = document.getElementById("offBtn");
+
+        // Turn ON the bulb
+        onBtn.addEventListener("click", function() {
+            bulb.src = "/home/user/Downloads/on.jpeg";
+        });
+
+        // Turn OFF the bulb
+        offBtn.addEventListener("click", function() {
+            bulb.src = "/home/user/Downloads/off.jpeg";
+        });
+    </script>
+
+</body>
+</html>
